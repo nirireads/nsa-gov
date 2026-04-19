@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSA Strategic Partnership Report | MoEST</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Ambient Motion Background -->
+    <div class="ambient-background">
+        <div class="blob blob-1" id="blob-1"></div>
+        <div class="blob blob-2" id="blob-2"></div>
+        <div class="blob blob-3" id="blob-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-brand">NSA <span class="muted">×</span> MoEST</div>
+        <ul class="nav-links">
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#curriculum">Curriculum Shift</a></li>
+            <li><a href="#alignment">Alignment</a></li>
+            <li><a href="#models">Collaboration</a></li>
+            <li><a href="#pain-points">Pain Points</a></li>
+            <li><a href="#deck">Slide Deck</a></li>
+            <li><a href="#appendix">Appendix</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar line-1"></span>
+            <span class="bar line-2"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="submission-badge" id="hero-badge">Submitted to: Ministry of Education, Science and Technology (MoEST)</div>
+            <h1 class="title" id="hero-title">Strategic Partnership Report</h1>
+            <p class="description" id="hero-desc">Prepared for the Office of Minister Sasmit Pokharel to modernize Computer Science education in Nepal (Grades 9-10) by bridging the implementation gap with CodeMonkey.</p>
+            
+            <div class="hero-stats" id="hero-stats">
+                <div class="stat-box">
+                    <h3>45M+</h3>
+                    <p>Students on CodeMonkey</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Nepal Curriculum Aligned</p>
+                </div>
+                <div class="stat-box">
+                    <h3>NPR 2.5M</h3>
+                    <p>Grant-Ready Package</p>
+                </div>
+            </div>
+            
+            <a href="#summary" class="cta-button mt-4" id="hero-btn">Read the Report</a>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Summary Section -->
+        <section id="summary" class="card reveal-anim">
+            <h2 class="section-title">Executive Summary</h2>
+            <div class="card-content">
+                <p>This report provides a comprehensive strategic analysis for the Nepal STEM Alliance (NSA) to establish a formal partnership with the Ministry of Education, Science and Technology (MoEST). It covers the evolution of Nepal's CS curriculum, alignment of CodeMonkey Banana Tales with Grade 9–10 standards, NSA's collaboration models, targeted solutions to pain points, and a detailed government slide deck.</p>
+                <p>Nepal's 2026 education landscape is at a historic inflection point. Minister Pokharel's mandate calls for technology-first reform and a digital workforce prepared for the global economy. The new Grade 9–10 Computer Science curriculum (NCF 2076) has formally introduced Python programming—a transformative shift. However, a critical gap exists: the implementation layer remains largely absent.</p>
+                <div class="highlight-callout mt-4">
+                    <strong>The Solution:</strong> CodeMonkey's Banana Tales platform teaches Python through game-based, challenge-driven learning. Its coverage maps with remarkable precision to Nepal's Grade 9–10 curriculum. It is the practical implementation engine the government's curriculum reform desperately needs.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Old vs New -->
+        <section id="curriculum" class="card reveal-anim">
+            <h2 class="section-title">1. Old vs. New Nepal CS Curriculum</h2>
+            <h3 class="section-subtitle">A Comparative Paradigm Shift</h3>
+            <div class="card-content">
+                <p>Nepal's computer science education has undergone its most significant structural transformation in two decades. Understanding this context is essential.</p>
+
+                <div class="grid-2-col mt-4">
+                    <div class="clean-stat-card">
+                        <div class="stat-title muted">The Old Curriculum (Pre-2019)</div>
+                        <ul class="stat-list">
+                            <li><strong>Focus:</strong> MS Office tools proficiency.</li>
+                            <li><strong>Theoretical ICT:</strong> Rote memorization of hardware with no application.</li>
+                            <li><strong>No Programming:</strong> Coding absent from the curriculum.</li>
+                            <li><strong>Passive Learning:</strong> Students studied "about" computers.</li>
+                        </ul>
+                        <p class="mt-4 muted text-sm"><em>Result: Graduates with computer literacy but zero coding ability, creating a weak STEM foundation.</em></p>
+                    </div>
+                    <div class="clean-stat-card active-stat">
+                        <div class="stat-title accent">The New Curriculum (NCF 2076)</div>
+                        <ul class="stat-list active">
+                            <li><strong>Focus:</strong> Rigorous academic discipline.</li>
+                            <li><strong>Format:</strong> 128 hrs/year (64 theory + 64 practical).</li>
+                            <li><strong>Python Programming:</strong> 33-34 hrs of real coding.</li>
+                            <li><strong>Future Integration:</strong> Web Dev, AI, Data Management.</li>
+                        </ul>
+                        <p class="mt-4 accent text-sm"><em>Result: Students must write, test, and debug actual Python code—not just describe it.</em></p>
+                    </div>
+                </div>
+
+                <h4 class="minor-heading mt-5">What the New Curriculum Demands:</h4>
+                <div class="timeline mt-4">
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>Real Code</h4><p class="muted">Students must write actual Python code (for, while, if/else, dictionaries).</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>Practical Weight</h4><p class="muted">Practical work accounts for 50% of total instruction time.</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>Project-Based</h4><p class="muted">Internal evaluations demand students build and present real programs.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Alignment -->
+        <section id="alignment" class="card reveal-anim">
+            <h2 class="section-title">2. Curriculum Alignment</h2>
+            <h3 class="section-subtitle">New CDC Curriculum vs. CodeMonkey Banana Tales</h3>
+            <div class="card-content">
+                <p>This provides a lesson-by-lesson mapping between the official Nepal CS curriculum and CodeMonkey Banana Tales. Banana Tales teaches Python through the identical logical progression demanded by the CDC.</p>
+
+                <h4 class="minor-heading mt-4">Grade 9 Alignment — Unit 7 (Python Concept)</h4>
+                <div class="table-container">
+                    <table class="clean-table compact-table">
+                        <thead>
+                            <tr>
+                                <th>Nepal CDC Topic (Gr 9)</th>
+                                <th>Banana Tales Coverage</th>
+                                <th>Lesson</th>
+                                <th>Match</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>7.3 Flowchart & logic</td><td>Sequencing activity, step-by-step logic</td><td>Lesson 2</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.4 Testing & debugging</td><td>Fixing code order errors</td><td>Lesson 2</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.6–7.7 Basic syntax & objects</td><td>Object properties (giraffe.height)</td><td>Lesson 1</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.8 I/O statements</td><td>print(), input()</td><td>Lesson 5, 14</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.9 Data types & variables</td><td>Variable reassignment, numerical data</td><td>Lesson 6</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.10 Type casting</td><td>int() conversion</td><td>Lesson 14</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.11 Arithmetic & Relational</td><td>Operators, height+1, comparison</td><td>Lesson 6, 9</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.11 Logical operators</td><td>and, or, not with truth tables</td><td>Lesson 10, 11</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.12 Conditionals (if, elif, else)</td><td>Visual game-based pathing</td><td>Lesson 7, 8, 14</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.13 Iteration (for, while loops)</td><td>Iterating lists, matching criteria</td><td>Lesson 4, 5, 9</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>7.14 Lists & Dictionaries</td><td>Indexing, key/value pairs</td><td>Lesson 3, 16</td><td><span class="badge full">✅ Full</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="minor-heading mt-5">Grade 10 Alignment — Unit 4 (Programming)</h4>
+                <div class="table-container">
+                    <table class="clean-table compact-table">
+                        <thead>
+                            <tr>
+                                <th>Nepal CDC Topic (Gr 10)</th>
+                                <th>Banana Tales Coverage</th>
+                                <th>Lesson</th>
+                                <th>Match</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>4.1 Revision of Basics</td><td>Progressive challenges</td><td>All (P1 Review)</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>4.2 User-defined functions</td><td>def keyword, arguments, parameters</td><td>Lesson 12</td><td><span class="badge full">✅ Full</span></td></tr>
+                            <tr><td>4.3 Libraries & packages</td><td>Built-in lib concepts</td><td>Lesson 5, 6</td><td><span class="badge partial">🔶 Partial</span></td></tr>
+                            <tr><td>4.4 Turtle Graphics</td><td>Separate Python library</td><td>N/A</td><td><span class="badge none">❌ None</span></td></tr>
+                            <tr><td>4.6 File handling (CSV/Pandas)</td><td>File I/O beyond scope</td><td>N/A</td><td><span class="badge none">❌ None</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="highlight-callout mt-4 alert-blue">
+                    <strong>Bonus Coverage:</strong> Banana Tales teaches OOP (Classes), String algorithms, Sets, Tuples, 2D Lists, and Bubble Sorting Analysis, inherently preparing students for Grade 11-12 standards.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Collaboration Models -->
+        <section id="models" class="card reveal-anim">
+            <h2 class="section-title">3. Actionable Collaboration Models</h2>
+            <div class="card-content">
+                <p>Given the 2082/83 budget priorities, here are five concrete collaborative structures between NSA and the MoEST:</p>
+
+                <div class="model-grid mt-4">
+                    <div class="model-card">
+                        <div class="model-header">Model A</div>
+                        <h4>District Technology Hub Partner</h4>
+                        <p class="muted">NSA acts as the curriculum partner for the 100 schools receiving the NPR 2.5M grants. Costs structure ideally to the 30% software/training budget.</p>
+                    </div>
+                    <div class="model-card">
+                        <div class="model-header">Model B</div>
+                        <h4>Teacher Bank Pedagogy Partner</h4>
+                        <p class="muted">Pre/in-service training for volunteer university grads to effectively teach Python instantly without prior teaching background.</p>
+                    </div>
+                    <div class="model-card">
+                        <div class="model-header">Model C</div>
+                        <h4>National Curriculum Endorsement</h4>
+                        <p class="muted">Officially placing CodeMonkey Banana Tales in the MoEST list of approved/funded supplementary resources.</p>
+                    </div>
+                    <div class="model-card">
+                        <div class="model-header">Model D</div>
+                        <h4>Book Free Friday PBL</h4>
+                        <p class="muted">Scaling Mayor Balen pattern nationally with a 'Coding Friday' track and 'Coding Olympics' utilizing CodeMonkey.</p>
+                    </div>
+                    <div class="model-card full-width">
+                        <div class="model-header">Model E</div>
+                        <h4>Pilot MoU (5-10 Govt Schools)</h4>
+                        <p class="muted">Immediate zero-risk pilot. NSA provides free licenses, MoEST provides access. Compare term-end learning outcomes against control schools for national scale proof.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Pain Points -->
+        <section id="pain-points" class="card reveal-anim">
+            <h2 class="section-title">4. Pain Point Mitigation</h2>
+            <h3 class="section-subtitle">MoEST Problems → NSA Solutions</h3>
+            <div class="card-content">
+                <div class="pain-point-flow mt-4">
+                    <!-- Point 1 -->
+                    <div class="pt-item">
+                        <div class="pt-problem">
+                            <h5>Stem Teacher Deficit</h5>
+                            <p>3,203 Tech teachers nationwide, many untrained in Python. Teacher Bank volunteers lack pedagogical setup.</p>
+                        </div>
+                        <div class="pt-arrow">➜</div>
+                        <div class="pt-solution">
+                            <h5>Zero-Coding Teacher Ready</h5>
+                            <p>CodeMonkey provides automated grading, lesson plans, and 3-day bootcamps making non-coding teachers facilitators instantly.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Point 2 -->
+                    <div class="pt-item">
+                        <div class="pt-problem">
+                            <h5>Theoretical-Only Instruction</h5>
+                            <p>Students read code from a book but never run it. Testing relies on rote memorization over execution.</p>
+                        </div>
+                        <div class="pt-arrow">➜</div>
+                        <div class="pt-solution">
+                            <h5>Real Execution Environment</h5>
+                            <p>Students must write real Python. Dashboard auto-grades real execution accuracy to feed the 50% practical score.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="pt-item">
+                        <div class="pt-problem">
+                            <h5>Remote Underutilization</h5>
+                            <p>Remote schools lack reliable connectivity. Hardware grants go completely unspent due to zero curriculum strategy.</p>
+                        </div>
+                        <div class="pt-arrow">➜</div>
+                        <div class="pt-solution">
+                            <h5>Turnkey Offline/Low-Bandwidth</h5>
+                            <p>Offline modes, pre-loaded content. Replaces idle-hardware investments with a turnkey implementation package.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Slide Deck -->
+        <section id="deck" class="card reveal-anim">
+            <h2 class="section-title">5. Pitch Slide Deck Blueprint</h2>
+            <h3 class="section-subtitle">Presentation for Minister Sasmit Pokharel</h3>
+            <div class="card-content">
+                <p>Designed for a 30-minute structured presentation, moving from urgent problem framing to an undeniable, cost-effective solution.</p>
+
+                <div class="slides-grid mt-4">
+                    <!-- Slide 1 -->
+                    <div class="slide-card">
+                        <span class="slide-num">01</span>
+                        <h5>COVER: NSA × MoEST</h5>
+                        <p><strong>Goal:</strong> Establish credibility (45M+ students global stat).</p>
+                        <p class="slide-notes"><em>Notes: Let the cover speak. Silence establishes authority.</em></p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide-card">
+                        <span class="slide-num">02</span>
+                        <h5>Digital Economy Needs Coders</h5>
+                        <p><strong>Goal:</strong> Connect to minister's mandate; Highlight 3,203 teacher gap.</p>
+                        <p class="slide-notes"><em>Notes: Use exact teacher shortage data to mirror his problem statement.</em></p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide-card">
+                        <span class="slide-num">03</span>
+                        <h5>New Curriculum Demands</h5>
+                        <p><strong>Goal:</strong> Prove technical credibility of the 2076 Grade 9-10 reforms.</p>
+                        <p class="slide-notes"><em>Notes: Bring physical copies of CDC docs. Point to requirements.</em></p>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="slide-card">
+                        <span class="slide-num">04</span>
+                        <h5>The Implementation Gap</h5>
+                        <p><strong>Goal:</strong> Show the curriculum fails without a pedagogical layer (The Bridge).</p>
+                        <p class="slide-notes"><em>Ask: 'What % of Grade 9 students wrote working Python last year?'</em></p>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="slide-card">
+                        <span class="slide-num">05</span>
+                        <h5>CodeMonkey Demo</h5>
+                        <p><strong>Goal:</strong> 60-second visual proof of gamified Python.</p>
+                        <p class="slide-notes"><em>Notes: Live demo is worth 10 minutes of talking.</em></p>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="slide-card">
+                        <span class="slide-num">06</span>
+                        <h5>100% Curriculum Alignment</h5>
+                        <p><strong>Goal:</strong> Prove Nepal-specific curriculum accuracy lesson-by-lesson.</p>
+                        <p class="slide-notes"><em>Notes: Leave-behind printout of the alignment table.</em></p>
+                    </div>
+                    <!-- Slides Cont... -->
+                    <div class="slide-card">
+                        <span class="slide-num">07-09</span>
+                        <h5>Solving Teachers, Pilots & Budgets</h5>
+                        <p><strong>Goal:</strong> No coding exp needed. Pilot success metrics. Fits NPR 2.5m grant.</p>
+                        <p class="slide-notes"><em>Notes: Make it easy for finance committees to say 'yes'.</em></p>
+                    </div>
+                    <div class="slide-card">
+                        <span class="slide-num">12-13</span>
+                        <h5>The 3 Asks & Closing Vision</h5>
+                        <p><strong>Goal:</strong> Request MoU, Pilot Hubs, CDC Endorsement.</p>
+                        <p class="slide-notes"><em>Notes: End with Gen-Z digital economy reality. Leave handouts.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appendix -->
+        <section id="appendix" class="card reveal-anim">
+            <h2 class="section-title">Appendix & Contacts</h2>
+            <div class="card-content">
+                <div class="grid-2-col">
+                    <div>
+                        <h4 class="minor-heading mt-0">Key Value Proposition</h4>
+                        <ul class="stat-list active">
+                            <li><strong>Requirement:</strong> Zero prior teacher coding exp needed.</li>
+                            <li><strong>Timeline:</strong> Launch within 48h of agreement.</li>
+                            <li><strong>Scale:</strong> 5k students Yr1 → 20k Yr3.</li>
+                            <li><strong>Validation:</strong> Used by ministries in 100+ countries.</li>
+                            <li><strong>Financing:</strong> Built to map to MoEST 2.5M grants.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="minor-heading mt-0">Project Leadership</h4>
+                        <div class="contact-box mt-4">
+                            <p><strong>Sushil Budhathoki</strong><br><span class="muted">Founder & CEO, NSA</span></p>
+                            <p class="mt-2"><strong>Diperson Shrestha</strong><br><span class="muted">Co-Founder & Head of Academics, NSA</span></p>
+                            <a href="mailto:info@nepalstemalliance.org" class="cta-button-outline mt-3">Contact NSA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Strategic Alignment Report.</p>
+        <p class="muted">Prepared for Nepal STEM Alliance (NSA).</p>
+    </footer>
+
+    <!-- JS Logic & Animations via Motion One -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

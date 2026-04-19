@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging Nepal's Coding Gap</title>
+    <link rel="stylesheet" href="presentation.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="presentation-container">
+
+        <!-- SLIDE 1 -->
+        <div class="slide cover-slide active">
+            <div class="logo-lockup anim-1"><i class='bx bx-book-reader'></i> Nepal STEM Alliance × CodeMonkey <i class='bx bx-code-alt'></i></div>
+            <h1 class="slide-title anim-2">Bridging Nepal's Coding Gap</h1>
+            <h2 class="slide-subtitle anim-3">A National Partnership for Real CS, AI & Digital Literacy Education</h2>
+            <div class="stat-box-container anim-4">
+                <div class="stat-box"><i class='bx bx-globe'></i><div class="stat-number">45M+</div><div class="stat-label">Students Globally</div></div>
+                <div class="stat-box"><i class='bx bx-check-shield'></i><div class="stat-number">100%</div><div class="stat-label">Gr 9-10 Aligned</div></div>
+                <div class="stat-box"><i class='bx bx-line-chart'></i><div class="stat-number">2.5M</div><div class="stat-label">Students by Year 5</div></div>
+            </div>
+            <div class="date-location anim-5">Submitted to: Office of Minister Sasmit Pokharel, MoEST<br>April 2026 | Kathmandu, Nepal</div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-compass'></i> Context</div>
+            <h1 class="slide-title anim-1">Nepal Is at a Historic Crossroads</h1>
+            <div class="grid-2">
+                <div class="column">
+                    <ul class="anim-2">
+                        <li><i class='bx bx-chevron-right'></i> Nepal's IT sector: fastest-growing export sector, 2025–26</li>
+                        <li><i class='bx bx-chevron-right'></i> Government's 18-Point National Commitment: coding at school level</li>
+                        <li><i class='bx bx-chevron-right'></i> Minister's mandate: technology-first reform, digital workforce</li>
+                        <li><i class='bx bx-chevron-right'></i> AI Policy signals: the government is ready to act</li>
+                    </ul>
+                    <div class="warning-box anim-3"><i class='bx bx-error-circle'></i><div><h4>The question is not whether to teach coding.</h4><p style="margin-bottom:0">It is how and with whom.</p></div></div>
+                </div>
+                <div class="image-wrapper anim-4"><img src="nepal_classroom.png" alt="Nepali classroom"></div>
+            </div>
+            <div class="slide-footer-left anim-5"><i class='bx bx-info-circle'></i> Source: nepalitelecom.com, 2026; PMO 18-Point Commitment</div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-compass'></i> Context</div>
+            <h1 class="slide-title anim-1">Nepal's Schools: The Opportunity at Scale</h1>
+            <table class="data-table anim-2">
+                <thead><tr><th>Level</th><th>Grades</th><th>Schools (Approx.)</th><th>Students Enrolled</th></tr></thead>
+                <tbody>
+                    <tr><td>Primary</td><td>1–5</td><td>35,000+</td><td>2,800,000</td></tr>
+                    <tr><td>Lower Secondary</td><td>6–8</td><td>18,000+</td><td>1,300,000</td></tr>
+                    <tr><td>Secondary</td><td>9–10</td><td>10,826</td><td>680,000</td></tr>
+                    <tr><td>Higher Sec.</td><td>11–12</td><td>3,500+</td><td>350,000</td></tr>
+                    <tr><td style="color:var(--primary-blue);font-weight:bold;">Total K–12</td><td style="color:var(--primary-blue);font-weight:bold;">1–12</td><td style="color:var(--primary-blue);font-weight:bold;">~43,000+</td><td style="color:var(--primary-blue);font-weight:bold;">~5,130,000</td></tr>
+                </tbody>
+            </table>
+            <div class="warning-box anim-3" style="margin-top:20px;"><i class='bx bx-bulb'></i><div><h4>Key Insight</h4><p style="margin-bottom:0;">Nepal has 5.13 million enrolled students. A 50% access target = <strong>2.56 million students</strong> — exactly NSA's Year 5 goal.</p></div></div>
+            <div class="slide-footer-left anim-4"><i class='bx bx-info-circle'></i> Source: Nepal NSO, DoE Flash Report 2022–23</div>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-compass'></i> Context</div>
+            <h1 class="slide-title anim-1">The Old System vs. The New Mandate</h1>
+            <table class="data-table anim-2" style="margin-top:30px;">
+                <thead><tr><th>Dimension</th><th>Old System (Pre-2076)</th><th>New Mandate (NCF 2076 / 2026)</th></tr></thead>
+                <tbody>
+                    <tr><td>Focus</td><td>MS Office, hardware theory</td><td>Real Python programming</td></tr>
+                    <tr><td>Teaching style</td><td>Memorization</td><td>50% practical, project-based</td></tr>
+                    <tr><td>Programming</td><td>None</td><td class="highlight">Python — Grade 9 & 10</td></tr>
+                    <tr><td>Assessment</td><td>Written recall exams</td><td>Practical coding + projects</td></tr>
+                    <tr><td>Teacher requirements</td><td>Basic ICT literacy</td><td class="highlight">Python pedagogy capability</td></tr>
+                </tbody>
+            </table>
+            <div class="warning-box anim-3" style="margin-top:20px; border-left-color: #e74c3c;"><i class='bx bx-x-circle' style="color: #e74c3c;"></i><div><h4 style="color: #c0392b;">Key Consequence</h4><p style="margin-bottom:0;">An entire generation graduated with computer literacy but zero coding ability.</p></div></div>
+        </div>
+
+        <!-- SLIDE 5 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-error'></i> Problem</div>
+            <h1 class="slide-title anim-1">The Curriculum Exists. The Delivery Does Not.</h1>
+            <div class="bridge-diagram anim-2">
+                <div class="bridge-pillar"><h3>MoEST Policy</h3><p style="color:var(--text-muted);font-size:0.9rem;margin-top:10px;">NCF 2076 Curriculum</p></div>
+                <div class="bridge-gap"><i class='bx bx-unlink'></i><br>MISSING INFRASTRUCTURE</div>
+                <div class="bridge-pillar"><h3>Student Outcomes</h3><p style="color:var(--text-muted);font-size:0.9rem;margin-top:10px;">Real Coding Skills</p></div>
+            </div>
+            <div class="grid-2 anim-3" style="margin-top:20px;">
+                <ul><li><i class='bx bx-message-alt-error'></i> Grade 9 Python: 33 hrs mandated. Code never run.</li><li><i class='bx bx-message-alt-error'></i> Grade 10 Python: 34 hrs mandated. No teachers ready.</li></ul>
+                <ul><li><i class='bx bx-message-alt-error'></i> 3,203 S&T teachers for 10,826 secondary schools.</li><li><i class='bx bx-message-alt-error'></i> NPR 2.5M hardware grants sit idle.</li></ul>
+            </div>
+        </div>
+
+        <!-- SLIDE 6 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-error'></i> Problem</div>
+            <h1 class="slide-title anim-1">Five Failures of the Ecosystem</h1>
+            <div class="grid-2">
+                <div class="column">
+                    <div class="step-item anim-2"><div class="step-number">1</div><div class="step-content"><h4>No Structured Implementation</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Policy demands Python. Classrooms teach from books.</p></div></div>
+                    <div class="step-item anim-3"><div class="step-number">2</div><div class="step-content"><h4>Teacher Shortage at Scale</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Less than 1 qualified prep per 3 schools.</p></div></div>
+                    <div class="step-item anim-4"><div class="step-number">3</div><div class="step-content"><h4>Tool Mismatch</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Current tools lack pedagogical structure.</p></div></div>
+                </div>
+                <div class="column">
+                    <div class="step-item anim-5"><div class="step-number">4</div><div class="step-content"><h4>Budget Underspending</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Hardware grants lost to lack of curriculum drivers.</p></div></div>
+                    <div class="step-item anim-5"><div class="step-number">5</div><div class="step-content"><h4>Rural/Remote Access Gap</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Connectivity & language barriers compound issues.</p></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 7 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-error'></i> Problem</div>
+            <h1 class="slide-title anim-1">Why Scratch Is Not the Answer</h1>
+            <p class="anim-2"><strong>What Scratch Is Good For:</strong> Early elementary (Grades 1-3) visual introduction to logic.</p>
+            <table class="data-table anim-3">
+                <thead><tr><th>Problem Area</th><th>Scratch Reality in Nepal Classrooms</th></tr></thead>
+                <tbody>
+                    <tr><td>Learning Style</td><td>Students copy blocks from books — replication, not reasoning</td></tr>
+                    <tr><td>Teacher Dependency</td><td>Progress depends entirely on teacher guidance</td></tr>
+                    <tr><td>Language Transition</td><td class="highlight"><i class='bx bx-x' style="color:#e74c3c;"></i> Does not transition to Python</td></tr>
+                    <tr><td>Assessment</td><td>No automated grading</td></tr>
+                    <tr><td>Curriculum Alignment</td><td>Not aligned with NCF 2076 target</td></tr>
+                </tbody>
+            </table>
+            <div class="warning-box anim-4"><i class='bx bx-info-circle'></i><div><h4>Conclusion</h4><p style="margin-bottom:0;">Scratch is an introductory tool, not a national K-12 CS ecosystem.</p></div></div>
+        </div>
+
+        <!-- SLIDE 8 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-error'></i> Problem</div>
+            <h1 class="slide-title anim-1">Why Digi School Cannot Scale</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <thead><tr><th>Category</th><th>Digi School</th><th>CodeMonkey</th></tr></thead>
+                <tbody>
+                    <tr><td>Student Progress Dash</td><td>No</td><td class="highlight"><i class='bx bx-check'></i> Yes</td></tr>
+                    <tr><td>Teacher/Admin Dash</td><td>No</td><td class="highlight"><i class='bx bx-check'></i> Yes</td></tr>
+                    <tr><td>Automated Grading</td><td>Basic</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                    <tr><td>Teacher Effort</td><td>High</td><td class="highlight"><i class='bx bx-check'></i> Low</td></tr>
+                    <tr><td>Learning Style</td><td>Remember & Learn</td><td class="highlight"><i class='bx bx-check'></i> Learn by Doing</td></tr>
+                    <tr><td>Specialization</td><td>Low</td><td class="highlight"><i class='bx bx-check'></i> High</td></tr>
+                </tbody>
+            </table>
+            <p class="anim-3" style="margin-top:20px; font-style:italic;">CodeMonkey provides a scalable, measurable, and standardized ecosystem built for national rollout.</p>
+        </div>
+
+        <!-- SLIDE 9 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-error'></i> Problem</div>
+            <h1 class="slide-title anim-1">The Digital Divide as a Structural Barrier</h1>
+            <div class="grid-2">
+                <div class="column anim-2">
+                    <ul>
+                        <li><i class='bx bx-wifi-off'></i> Only 34% of Nepal's population has reliable internet.</li>
+                        <li><i class='bx bx-wifi-off'></i> Unreliable connectivity + teacher shortages.</li>
+                        <li><i class='bx bx-wifi-off'></i> English-dependent platforms exclude Nepali-medium instruction.</li>
+                        <li><i class='bx bx-wifi-off'></i> Digital divide affects 60%+ of Nepal's student population.</li>
+                    </ul>
+                </div>
+                <div class="column anim-3" style="background:var(--bg-alt); padding:30px; border-top:4px solid var(--amber-gold); border-radius:6px;">
+                    <h3 style="color:var(--amber-gold); margin-bottom:20px;">NSA's Structural Response</h3>
+                    <ul>
+                        <li><i class='bx bx-server'></i> Offline-compatible modes & pre-loaded content.</li>
+                        <li><i class='bx bx-book-translate'></i> Nepali-language teacher guides.</li>
+                        <li><i class='bx bx-support'></i> Hybrid field support network reducing internet dependency.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 10 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-group'></i> Who is NSA</div>
+            <h1 class="slide-title anim-1">Nepal STEM Alliance: Who We Are</h1>
+            <div class="grid-2">
+                <div class="column">
+                    <p class="anim-2"><strong>Mission:</strong> To ensure every student in Nepal has access to real coding, digital literacy, and AI education.</p>
+                    <h4 class="anim-3" style="color:var(--amber-gold); margin:20px 0 10px;">Three-Pillar Approach:</h4>
+                    <ul class="anim-4">
+                        <li><i class='bx bx-laptop'></i> <strong>Tools:</strong> World-class platforms (CodeMonkey)</li>
+                        <li><i class='bx bx-chalkboard'></i> <strong>Teachers:</strong> Structured training certification</li>
+                        <li><i class='bx bx-network-chart'></i> <strong>Systems:</strong> Curriculum integration, outcome reporting</li>
+                    </ul>
+                </div>
+                <div class="column anim-5" style="text-align:center;">
+                    <div style="border:1px solid var(--border-light); border-radius:8px; padding:30px; background:var(--bg-alt);">
+                        <i class='bx bx-buildings' style="font-size:3rem; color:var(--primary-blue); margin-bottom:15px;"></i>
+                        <h4 style="color:var(--primary-blue);margin-bottom:20px;">Leadership</h4>
+                        <p><strong>Sushil Budhathoki</strong><br><span style="color:var(--text-muted);font-size:0.9rem;">Founder & CEO</span></p>
+                        <p><strong>Diperson Shrestha</strong><br><span style="color:var(--text-muted);font-size:0.9rem;">Co-Founder & Head of Academics</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 11 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-group'></i> Who is NSA</div>
+            <h1 class="slide-title anim-1">What NSA Has Built</h1>
+            <div class="grid-2">
+                <div class="column anim-2">
+                    <h4 style="color:var(--primary-blue); margin-bottom:10px;"><i class='bx bx-building-house'></i> School Partnerships</h4>
+                    <ul><li><i class='bx bx-check'></i> MoU with Galaxy Public School</li><li><i class='bx bx-check'></i> Active program expansion across Kathmandu/districts</li></ul>
+                    <h4 style="color:var(--primary-blue); margin-bottom:10px; margin-top:20px;"><i class='bx bx-chalkboard'></i> Teacher Training Programs</h4>
+                    <ul><li><i class='bx bx-check'></i> 3-day intensive certifications completed</li><li><i class='bx bx-check'></i> Teachers instructing Python with zero prior background</li></ul>
+                </div>
+                <div class="column anim-3">
+                    <h4 style="color:var(--primary-blue); margin-bottom:10px;"><i class='bx bx-trophy'></i> Competitions & Events</h4>
+                    <ul><li><i class='bx bx-check'></i> National Codeavour coding Olympiad track</li><li><i class='bx bx-check'></i> STEM Discovery Campaign 2026</li></ul>
+                    <h4 style="color:var(--primary-blue); margin-bottom:10px; margin-top:20px;"><i class='bx bx-wifi'></i> Online Operations</h4>
+                    <ul><li><i class='bx bx-check'></i> Structured online K-10 coding sessions</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 12 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-group'></i> Who is NSA</div>
+            <h1 class="slide-title anim-1">NSA in Action</h1>
+            <div class="grid-3 anim-2" style="margin-top:20px; height:60%;">
+                <div class="image-wrapper"><img src="teacher_training.png" alt="Teacher Training"></div>
+                <div class="image-wrapper"><img src="coding_event.png" alt="Coding Event"></div>
+                <div class="image-wrapper"><img src="nepal_classroom.png" alt="Students in Lab"></div>
+                
+                <div style="text-align:center; padding:10px;"><i class='bx bxs-certification' style="font-size:2rem;color:var(--amber-gold);"></i><p>Teacher Certification</p></div>
+                <div style="text-align:center; padding:10px;"><i class='bx bx-trophy' style="font-size:2rem;color:var(--amber-gold);"></i><p>National Competitions</p></div>
+                <div style="text-align:center; padding:10px;"><i class='bx bx-group' style="font-size:2rem;color:var(--amber-gold);"></i><p>Classroom Deployment</p></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 13 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-group'></i> Who is NSA</div>
+            <h1 class="slide-title anim-1">Why NSA Is the Right Partner</h1>
+            <table class="data-table anim-2" style="margin-top:30px;">
+                <thead><tr><th>Requirement</th><th>MoEST Role</th><th>NSA Role</th></tr></thead>
+                <tbody>
+                    <tr><td>Mandate</td><td>Policy/Curriculum creation</td><td class="highlight"><i class='bx bx-check'></i> Implementation & Infrastructure</td></tr>
+                    <tr><td>Access</td><td>School & Teacher access</td><td class="highlight"><i class='bx bx-check'></i> Training, certification, ongoing support</td></tr>
+                    <tr><td>Funding</td><td>Budget allocation</td><td class="highlight"><i class='bx bx-check'></i> Licenses, Software, Curriculum package</td></tr>
+                    <tr><td>Scale</td><td>National authority</td><td class="highlight"><i class='bx bx-check'></i> District level execution capability</td></tr>
+                    <tr><td>Data</td><td>Requires 50% practical stat</td><td class="highlight"><i class='bx bx-check'></i> Automated generation of scoring reports</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SLIDE 14 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-code-block'></i> Why CodeMonkey</div>
+            <h1 class="slide-title anim-1">CodeMonkey: Global Scale, Local Alignment</h1>
+            <div class="grid-2">
+                <div class="column anim-2">
+                    <h3 style="color:var(--amber-gold); margin-bottom:20px;"><i class='bx bx-world'></i> Global Credibility</h3>
+                    <ul>
+                        <li><i class='bx bx-check'></i> 45+ million students worldwide</li>
+                        <li><i class='bx bx-check'></i> 350,000+ teachers</li>
+                        <li><i class='bx bx-check'></i> 18,000+ schools in 100+ countries</li>
+                        <li><i class='bx bx-check'></i> Used by ministries globally</li>
+                    </ul>
+                </div>
+                <div class="column anim-3" style="background:var(--bg-alt); padding:20px; border-radius:8px;">
+                    <h3 style="color:var(--amber-gold); margin-bottom:20px;"><i class='bx bx-target-lock'></i> Nepal-Specific Fit</h3>
+                    <ul>
+                        <li><i class='bx bx-check-double'></i> <strong class="highlight">100% of Grade 9 Python curriculum</strong> topics covered</li>
+                        <li><i class='bx bx-check-double'></i> Offline-compatible modes</li>
+                        <li><i class='bx bx-check-double'></i> Zero prior coding experience required from teachers</li>
+                        <li><i class='bx bx-check-double'></i> Deployable within 48 hours</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 15 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-code-block'></i> Why CodeMonkey</div>
+            <h1 class="slide-title anim-1">The Science Behind the Success</h1>
+            <div class="grid-1 anim-2" style="margin-top:20px;">
+                <div class="step-item"><div class="step-number">1</div><div class="step-content"><h4>Constructivist Pedagogy: Learn by Doing</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Real code execution required. Instant visual feedback.</p></div></div>
+                <div class="step-item"><div class="step-number">2</div><div class="step-content"><h4>Motivation First, Mastery Second</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Game narrative avoids cognitive overload. Built on engagement mechanics.</p></div></div>
+                <div class="step-item"><div class="step-number">3</div><div class="step-content"><h4>Progressive Language Path</h4><p style="color:var(--text-muted);font-size:1rem;margin-bottom:0;">Blocks → Text → Python → AI. Zero drop-off during transitions.</p></div></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 16 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-code-block'></i> Why CodeMonkey</div>
+            <h1 class="slide-title anim-1">A Platform Teachers Can Use From Day One</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <thead><tr><th>Task</th><th>Without CodeMonkey</th><th>With CodeMonkey</th></tr></thead>
+                <tbody>
+                    <tr><td>Lesson planning</td><td>2–3 hours/week</td><td class="highlight"><i class='bx bx-check'></i> 0 — pre-built</td></tr>
+                    <tr><td>Grading tasks</td><td>30 min/student</td><td class="highlight"><i class='bx bx-check'></i> Automated</td></tr>
+                    <tr><td>Class progress</td><td>Manual review</td><td class="highlight"><i class='bx bx-check'></i> Real-time dashboard</td></tr>
+                    <tr><td>Admin reports</td><td>Manual compilation</td><td class="highlight"><i class='bx bx-check'></i> Automated reports</td></tr>
+                    <tr><td>Coding knowledge?</td><td>Yes</td><td class="highlight"><i class='bx bx-check'></i> No</td></tr>
+                </tbody>
+            </table>
+            <div class="warning-box anim-3" style="background:rgba(66, 184, 128, 0.1); border-left-color:var(--green-success);">
+                <i class='bx bx-check-shield' style="color:var(--green-success);"></i><div><h4 style="color:var(--green-success);">Result</h4><p style="margin-bottom:0">A teacher with zero coding background can run a Python class from Day 1 after NSA's 3-day certification.</p></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 17 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-code-block'></i> Why CodeMonkey</div>
+            <h1 class="slide-title anim-1">100% Coverage: NCF 2076 Python Mapping</h1>
+            <table class="data-table data-table-compact anim-2">
+                <thead><tr><th>Nepal CDC Topic (Gr 9, Unit 7)</th><th>CodeMonkey Lesson</th><th>Match</th></tr></thead>
+                <tbody>
+                    <tr><td>Algorithm & Flowchart</td><td>Lesson 2 – Sequencing</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                    <tr><td>Python Intro, Basic Syntax</td><td>Lesson 1 – Introduction</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                    <tr><td>Variables & Data Types</td><td>Lesson 6 – Variables</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                    <tr><td>Arithmetic & Logical Operators</td><td>Lessons 6, 9, 10, 11</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                    <tr><td>If / If-Else / Elif Conditions</td><td>Lessons 7, 8, 14</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                    <tr><td>For Loop & While Loop</td><td>Lessons 4, 5, 9</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                    <tr><td>Lists & Dictionaries</td><td>Lessons 3, 16</td><td class="highlight"><i class='bx bx-check'></i> Full</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SLIDE 18 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-code-block'></i> Why CodeMonkey</div>
+            <h1 class="slide-title anim-1">Recognized Globally. Validated Locally.</h1>
+            <div class="grid-2">
+                <div class="column anim-2">
+                    <ul>
+                        <li><i class='bx bx-certification'></i> <strong>Standards Aligned:</strong> CSTA, ISTE, Common Core.</li>
+                        <li><i class='bx bx-chart'></i> <strong>Research Validated:</strong> Gamified coding produces stronger long-term retention vs theoretical.</li>
+                        <li><i class='bx bx-bank'></i> <strong>Government Precedent:</strong> Integrated into national systems worldwide.</li>
+                    </ul>
+                </div>
+                <div class="column anim-3" style="padding:30px; background:var(--bg-alt); border-radius:8px;">
+                    <h3 style="color:var(--amber-gold); margin-bottom:15px;">The Key Differentiator</h3>
+                    <p>In 100+ countries, 350,000 teachers — most without prior coding backgrounds — have successfully run CodeMonkey classes.</p>
+                    <p style="color:var(--text-muted)"><i>This is documented at scale, not a theoretical capability.</i></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 19 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-list-ol'></i> K-12 Curriculum</div>
+            <h1 class="slide-title anim-1">The Complete Learning Pathway</h1>
+            <p class="anim-2">NSA delivers a structured, grade-by-grade curriculum from Grade 1 to Grade 12.</p>
+            <div class="grid-3 anim-3" style="margin-top:20px;">
+                <div style="background:var(--bg-alt); padding:20px; border-top:4px solid var(--amber-gold); border-radius:6px; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+                    <i class='bx bx-grid-alt' style="font-size:2rem;color:var(--amber-gold);margin-bottom:10px;"></i>
+                    <h3 style="color:var(--primary-blue);">Grades 1-6</h3>
+                    <p style="font-size:1rem;font-weight:bold;">Foundation Layer</p>
+                    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0;">Blocks, Sequencing, Intro to Text Coding</p>
+                </div>
+                <div style="background:var(--bg-alt); padding:20px; border-top:4px solid var(--amber-gold); border-radius:6px; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+                    <i class='bx bx-code-curly' style="font-size:2rem;color:var(--amber-gold);margin-bottom:10px;"></i>
+                    <h3 style="color:var(--primary-blue);">Grades 7-10</h3>
+                    <p style="font-size:1rem;font-weight:bold;">Intermediate Layer</p>
+                    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0;">CoffeeScript, Real Python, Data Science Intro</p>
+                </div>
+                <div style="background:var(--bg-alt); padding:20px; border-top:4px solid var(--amber-gold); border-radius:6px; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+                    <i class='bx bx-brain' style="font-size:2rem;color:var(--amber-gold);margin-bottom:10px;"></i>
+                    <h3 style="color:var(--primary-blue);">Grades 11-12</h3>
+                    <p style="font-size:1rem;font-weight:bold;">Advanced Layer</p>
+                    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0;">AI, Chatbots, ML Game Engines</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 20 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-list-ol'></i> K-12 Curriculum</div>
+            <h1 class="slide-title anim-1">Foundation Layer: Grades 1–6</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <thead><tr><th>Grade</th><th>Course</th><th>Structure</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>CodeMonkey Jr.</td><td>Sequencing & Loops + Digital Use</td></tr>
+                    <tr><td>2</td><td>CodeMonkey Jr.</td><td>Conditional Loops + Procedures</td></tr>
+                    <tr><td>3</td><td>Beaver Achiever</td><td>Structured problem-solving</td></tr>
+                    <tr><td>4</td><td>Beaver Achiever</td><td>Digital Citizenship inclusion</td></tr>
+                    <tr><td>5</td><td>Coding Adventure I</td><td class="highlight"><i class='bx bx-code'></i> Text Coding Intro</td></tr>
+                    <tr><td>6</td><td>Coding Adventure II</td><td>Challenge Builder mastery</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SLIDE 21 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-list-ol'></i> K-12 Curriculum</div>
+            <h1 class="slide-title anim-1">Intermediate Layer: Grades 7–10</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <thead><tr><th>Grade</th><th>Course</th><th>Key Focus</th></tr></thead>
+                <tbody>
+                    <tr><td>7</td><td>Coding Adventure III</td><td>Mastery of text challenges</td></tr>
+                    <tr><td>8</td><td>Data Science</td><td>Data literacy fundamentals</td></tr>
+                    <tr><td>9</td><td>Banana Tales (Python I)</td><td class="highlight"><i class='bx bx-check-shield'></i> 100% NCF 2076 Python</td></tr>
+                    <tr><td>10</td><td>Banana Tales (Python II)</td><td>Python Advanced + AI Intro</td></tr>
+                </tbody>
+            </table>
+            <div class="warning-box anim-3" style="background:rgba(253, 185, 28, 0.1);"><i class='bx bx-bulb'></i><div><p style="margin-bottom:0;">Grade 9 and 10 directly fulfill Nepal's new mandatory CS curriculum targets.</p></div></div>
+        </div>
+
+        <!-- SLIDE 22 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-list-ol'></i> K-12 Curriculum</div>
+            <h1 class="slide-title anim-1">Advanced Layer: Grades 11–12</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <thead><tr><th>Grade</th><th>Course</th><th>Outcome Focus</th></tr></thead>
+                <tbody>
+                    <tr><td>11</td><td>Coding Chatbot</td><td>Applied AI / Natural Language</td></tr>
+                    <tr><td>12</td><td>Artificial Intelligence</td><td>Design & build AI games</td></tr>
+                </tbody>
+            </table>
+            <div class="grid-2 anim-3" style="margin-top:20px;">
+                <p><strong>Design Philosophy:</strong> Students become creators, not consumers of AI — matching Nepal's AI Policy goals.</p>
+            </div>
+        </div>
+
+        <!-- SLIDE 23 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-list-ol'></i> K-12 Curriculum</div>
+            <h1 class="slide-title anim-1">Curriculum Summary: Total Investment</h1>
+            <div class="stat-box-container anim-2" style="margin-top:40px;">
+                <div class="stat-box"><i class='bx bx-grid-alt'></i><div class="stat-number">124</div><div class="stat-label">Foundation Lessons</div></div>
+                <div class="stat-box"><i class='bx bx-code-curly'></i><div class="stat-number">87</div><div class="stat-label">Intermediate Lessons</div></div>
+                <div class="stat-box"><i class='bx bx-brain'></i><div class="stat-number">44</div><div class="stat-label">Advanced Lessons</div></div>
+            </div>
+            <p class="anim-3" style="text-align:center; margin-top:40px; font-weight:700; font-size:1.6rem; color:var(--amber-gold);">255+ Total Lessons spanning K-12.</p>
+        </div>
+
+        <!-- SLIDE 24 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-share-alt'></i> Collaboration Models</div>
+            <h1 class="slide-title anim-1">Overview: Five Collaboration Models</h1>
+            <p class="anim-2">Five concurrent channels designed to work within existing government structures and budgets.</p>
+            <div class="grid-3 anim-3" style="gap:15px; margin-top:20px;">
+                <div style="background:var(--bg-alt); padding:15px; border:1px solid var(--border-light); border-radius:6px;"><h5 style="color:var(--primary-blue); margin-bottom:5px;"><i class='bx bx-building-house'></i> Model A</h5><p style="font-size:0.9rem; font-weight:bold; margin-bottom:0;">District Hub Partner</p></div>
+                <div style="background:var(--bg-alt); padding:15px; border:1px solid var(--border-light); border-radius:6px;"><h5 style="color:var(--primary-blue); margin-bottom:5px;"><i class='bx bxs-user-badge'></i> Model B</h5><p style="font-size:0.9rem; font-weight:bold; margin-bottom:0;">Teacher Bank Partner</p></div>
+                <div style="background:var(--bg-alt); padding:15px; border:1px solid var(--border-light); border-radius:6px;"><h5 style="color:var(--primary-blue); margin-bottom:5px;"><i class='bx bx-award'></i> Model C</h5><p style="font-size:0.9rem; font-weight:bold; margin-bottom:0;">Curriculum Endorsement</p></div>
+                <div style="background:var(--bg-alt); padding:15px; border:1px solid var(--border-light); border-radius:6px;"><h5 style="color:var(--primary-blue); margin-bottom:5px;"><i class='bx bx-calendar-star'></i> Model D</h5><p style="font-size:0.9rem; font-weight:bold; margin-bottom:0;">Book Free Friday</p></div>
+                <div style="background:var(--bg-page); padding:15px; border:2px solid var(--amber-gold); border-radius:6px;"><h5 style="color:var(--amber-gold); margin-bottom:5px;"><i class='bx bx-rocket'></i> Model E</h5><p style="font-size:0.9rem; font-weight:bold; margin-bottom:0;">Pilot MoU</p></div>
+            </div>
+            <p class="anim-4" style="margin-top:15px; text-align:center; font-style:italic; font-size:0.9rem;">Model E creates proof. Models A, B, C, D create scale.</p>
+        </div>
+
+        <!-- SLIDE 25 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-share-alt'></i> Collaboration Models</div>
+            <h1 class="slide-title anim-1">Model A: Tech Hub Partner</h1>
+            <p class="anim-2"><strong>Converting Hardware Grants Into Learning Outcomes</strong></p>
+            <ul class="anim-3">
+                <li><i class='bx bx-check'></i> <strong>Designation:</strong> NSA handles software/training for 100 district grant schools.</li>
+                <li><i class='bx bx-check'></i> <strong>Execution:</strong> 3-day cert workshop, deployment of licenses.</li>
+                <li><i class='bx bx-check'></i> <strong>Reporting:</strong> Quarterly automated data feeds directly into MoEST.</li>
+                <li><i class='bx bx-check'></i> <strong>Budget:</strong> Software/Training easily fits inside the 20-30% curriculum budget of the 2.5M NPR grant.</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 26 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-share-alt'></i> Collaboration Models</div>
+            <h1 class="slide-title anim-1">Model B: Teacher Bank Partner</h1>
+            <p class="anim-2"><strong>Making the Teacher Bank Genuinely Effective</strong></p>
+            <ul class="anim-3">
+                <li><i class='bx bx-check'></i> <strong>Pre-Service Training:</strong> NSA trains Teacher Bank CS volunteers before deployment.</li>
+                <li><i class='bx bx-check'></i> <strong>Equipped:</strong> They graduate with school access credentials and pre-structured lessons.</li>
+                <li><i class='bx bx-check'></i> <strong>Ongoing Network:</strong> Online refresher modules provided monthly.</li>
+                <li><i class='bx bx-check'></i> <strong>Year 1 Target:</strong> 200 Teacher bank volunteers trained.</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 27 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-share-alt'></i> Collaboration Models</div>
+            <h1 class="slide-title anim-1">Model C: Curriculum Endorsement</h1>
+            <p class="anim-2"><strong>Official MoEST Resource Listing</strong></p>
+            <ul class="anim-3">
+                <li><i class='bx bx-check'></i> <strong>Petition:</strong> NSA submits formal full CDC Grade 9-10 alignment docs.</li>
+                <li><i class='bx bx-check'></i> <strong>Practical Outcome:</strong> Schools can purchase without friction from local budgets.</li>
+                <li><i class='bx bx-check'></i> <strong>Integration:</strong> NSA lesson plans become the reference framework for CDC's teaching hours.</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 28 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-share-alt'></i> Collaboration Models</div>
+            <h1 class="slide-title anim-1">Model D: Coding Friday</h1>
+            <p class="anim-2"><strong>Book Free Friday Track</strong></p>
+            <ul class="anim-3">
+                <li><i class='bx bx-check'></i> <strong>Design:</strong> Weekly themed coding challenges aligned by grade level.</li>
+                <li><i class='bx bx-check'></i> <strong>Scale:</strong> Pre-built lesson plans distributed via established channels.</li>
+                <li><i class='bx bx-check'></i> <strong>National Events:</strong> Qualifiers feed into National Coding Olympics.</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 29 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-share-alt'></i> Collaboration Models</div>
+            <h1 class="slide-title anim-1">Model E: Immediate Pilot MoU</h1>
+            <p class="anim-2"><strong>Proof Before Scale</strong></p>
+            <ul class="anim-3">
+                <li><i class='bx bx-check'></i> <strong>Structure:</strong> 1 academic year, 5-10 government community schools.</li>
+                <li><i class='bx bx-check'></i> <strong>Free of Cost:</strong> NSA provides licenses and full certification at no charge.</li>
+                <li><i class='bx bx-check'></i> <strong>MoEST Requirement:</strong> Official access letter, evaluation data sharing.</li>
+                <li><i class='bx bx-check'></i> <strong>Timeline:</strong> 30 days from MoU signing to classroom deployment.</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 30 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-line-chart'></i> Growth Plan</div>
+            <h1 class="slide-title anim-1">Five-Year Student Targets</h1>
+            <table class="data-table anim-2">
+                <thead><tr><th>Year</th><th>Students Reached</th><th>Cumulative Schools</th><th>Milestone</th></tr></thead>
+                <tbody>
+                    <tr><td>Year 1</td><td>25,000</td><td>50</td><td>MoU signed; pilots live</td></tr>
+                    <tr><td>Year 2</td><td>100,000</td><td>250</td><td>Teacher bank operational</td></tr>
+                    <tr><td>Year 3</td><td>500,000</td><td>1,250</td><td>CDC endorsement</td></tr>
+                    <tr><td>Year 4</td><td>1,000,000</td><td>3,750</td><td>7 Provinces covered</td></tr>
+                    <tr><td class="highlight"><i class='bx bxs-star' style="color:var(--amber-gold)"></i> Year 5</td><td class="highlight">2,500,000</td><td class="highlight">8,750</td><td>50% of K-12 Students</td></tr>
+                </tbody>
+            </table>
+            <div class="anim-3" style="margin-top:20px; width:100%; height:60px; background:var(--bg-alt); border:1px solid var(--border-light); position:relative; border-radius:6px;">
+                <div style="position:absolute; bottom:0; left:5%; width:10%; height:10%; background:var(--primary-blue); border-radius:4px 4px 0 0;"></div>
+                <div style="position:absolute; bottom:0; left:25%; width:10%; height:25%; background:var(--primary-blue); border-radius:4px 4px 0 0;"></div>
+                <div style="position:absolute; bottom:0; left:45%; width:10%; height:50%; background:var(--primary-blue); border-radius:4px 4px 0 0;"></div>
+                <div style="position:absolute; bottom:0; left:65%; width:10%; height:75%; background:var(--primary-blue); border-radius:4px 4px 0 0;"></div>
+                <div style="position:absolute; bottom:0; left:85%; width:10%; height:100%; background:var(--green-success); border-radius:4px 4px 0 0;"></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 31 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-map-alt'></i> Growth Plan</div>
+            <h1 class="slide-title anim-1">Five-Year Geographic Expansion</h1>
+            <div class="grid-2">
+                <div class="column anim-2">
+                    <ul style="margin-top:20px;">
+                        <li><i class='bx bx-map'></i> <strong>Year 1:</strong> Bagmati + 3 dist pilots</li>
+                        <li><i class='bx bx-map'></i> <strong>Year 2:</strong> Bagmati + Gandaki + Lumbini</li>
+                        <li><i class='bx bx-map'></i> <strong>Year 3:</strong> All 7 Prov — secondary cities</li>
+                        <li><i class='bx bx-map'></i> <strong>Year 4:</strong> All 7 Prov — rural expansion</li>
+                        <li><i class='bx bx-map'></i> <strong>Year 5:</strong> National saturation</li>
+                    </ul>
+                </div>
+                <div class="column anim-3" style="background:var(--bg-alt); padding:20px; border-radius:6px;">
+                    <h3 style="color:var(--amber-gold); margin-bottom:15px;"><i class='bx bx-wifi-off'></i> Rural Enablers</h3>
+                    <ul><li>CodeMonkey offline modes</li><li>Nepali guides</li><li>Localized teacher network</li><li>Hub schools act as regional centers</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 32 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-money'></i> Growth Plan</div>
+            <h1 class="slide-title anim-1">Financial Feasibility</h1>
+            <p class="anim-2">NSA frameworks scale within existing government budget structures.</p>
+            <ul class="anim-3">
+                <li><i class='bx bx-check'></i> <strong>Year 1:</strong> District tech grant leverages existing 2.5M NPR fund pool. Pilot schools are free.</li>
+                <li><i class='bx bx-check'></i> <strong>Year 2-3:</strong> Teacher bank digital budgets, provincial discretionary funds, and local school fee adjustments.</li>
+                <li><i class='bx bx-check'></i> <strong>Year 4-5:</strong> Dev partner co-financing (UNESCO, UNICEF), corporate CSR, and MoEST digital lines.</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 33 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-user-plus'></i> Growth Plan</div>
+            <h1 class="slide-title anim-1">The Teacher Pipeline Target</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <thead><tr><th>Year</th><th>Teachers Trained</th><th>Cumulative</th></tr></thead>
+                <tbody>
+                    <tr><td>Year 1</td><td>200</td><td>200</td></tr>
+                    <tr><td>Year 2</td><td>800</td><td>1,000</td></tr>
+                    <tr><td>Year 3</td><td>2,500</td><td>3,500</td></tr>
+                    <tr><td>Year 4</td><td>5,000</td><td>8,500</td></tr>
+                    <tr><td class="highlight">Year 5</td><td class="highlight"><i class='bx bx-check-shield'></i> 10,000</td><td class="highlight">18,500</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SLIDE 34 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-bar-chart-alt-2'></i> Outcomes</div>
+            <h1 class="slide-title anim-1">Where Nepal Stands Today (2026)</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <tbody>
+                    <tr><td>Students with real access</td><td>< 50,000 estimated</td></tr>
+                    <tr><td>Schools with structured CS</td><td>< 500</td></tr>
+                    <tr><td>Teachers certified in Python</td><td>< 200</td></tr>
+                    <tr><td>Gr 9-10 writing real Python</td><td class="highlight" style="color:#e74c3c;">Near zero in community schools</td></tr>
+                    <tr><td>Gov endorsed platform</td><td>None</td></tr>
+                </tbody>
+            </table>
+            <div class="warning-box anim-3" style="border-left-color:#e74c3c;"><i class='bx bx-error' style="color:#e74c3c;"></i><div><p style="margin-bottom:0">The curriculum mandates Python for 680,000 secondary students. The delivery infrastructure does not exist.</p></div></div>
+        </div>
+
+        <!-- SLIDE 35 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-bar-chart-alt-2'></i> Outcomes</div>
+            <h1 class="slide-title anim-1">Where Nepal Will Be (2031)</h1>
+            <table class="data-table anim-2" style="margin-top:20px;">
+                <tbody>
+                    <tr><td>Students with coding/CS access</td><td class="highlight">2,500,000 (50% of K-12)</td></tr>
+                    <tr><td>Schools with structured delivery</td><td class="highlight">8,750+</td></tr>
+                    <tr><td>Teachers certified in pedagogy</td><td class="highlight">18,500+</td></tr>
+                    <tr><td>Gr 9-10 writing real Python</td><td class="highlight">680,000 (100% target)</td></tr>
+                    <tr><td>Gov endorsed platform</td><td class="highlight">CodeMonkey official resource</td></tr>
+                </tbody>
+            </table>
+            <p class="anim-3" style="margin-top:20px; font-style:italic; text-align:center;"><i class='bx bx-check-circle' style="color:var(--green-success);"></i> A nationally integrated CS education system with documented outcomes.</p>
+        </div>
+
+        <!-- SLIDE 36 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-bar-chart-alt-2'></i> Outcomes</div>
+            <h1 class="slide-title anim-1">Comparison: 2026 vs 2031</h1>
+            <div class="grid-2 anim-2">
+                <div class="column" style="background:var(--bg-alt); padding:20px; border-top:4px solid #e74c3c; border-radius:6px;">
+                    <h3 style="color:#c0392b;margin-bottom:20px; text-align:center;">2026 (Now)</h3>
+                    <p style="text-align:center;font-size:0.9rem;">Curriculum on paper only</p>
+                    <p style="text-align:center;font-size:0.9rem;">< 200 capable teachers</p>
+                    <p style="text-align:center;font-size:0.9rem;">Students copy from book</p>
+                    <p style="text-align:center;font-size:0.9rem;">No government data tracked</p>
+                    <p style="text-align:center;font-size:0.9rem;">Rural access near zero</p>
+                </div>
+                <div class="column" style="background:var(--bg-page); padding:20px; border:2px solid var(--green-success); border-radius:6px;">
+                    <h3 style="color:var(--green-success);margin-bottom:20px; text-align:center;">2031 (Transformed)</h3>
+                    <p style="text-align:center;font-size:0.9rem;">Classroom-level execution</p>
+                    <p style="text-align:center;font-size:0.9rem;">18,500+ certified teachers</p>
+                    <p style="text-align:center;font-size:0.9rem;">Write, run, debug code</p>
+                    <p style="text-align:center;font-size:0.9rem;">Quarterly automated MoEST reports</p>
+                    <p style="text-align:center;font-size:0.9rem;">3,000+ rural schools connected</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 37 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-bar-chart-alt-2'></i> Outcomes</div>
+            <h1 class="slide-title anim-1">Beyond the Numbers</h1>
+            <div class="grid-2 anim-2">
+                <div class="column">
+                    <h4 style="color:var(--amber-gold);"><i class='bx bx-briefcase'></i> Workforce Impact</h4>
+                    <p style="font-size:1rem;color:var(--text-muted);">Trained domestic talent pool directly curbs IT brain drain and aids export growth.</p>
+                    <h4 style="color:var(--amber-gold); margin-top:20px;"><i class='bx bx-group'></i> Social Impact</h4>
+                    <p style="font-size:1rem;color:var(--text-muted);">Digital rural/urban divide shrinks; transparent STEM gender participation metrics.</p>
+                </div>
+                <div class="column">
+                    <h4 style="color:var(--amber-gold);"><i class='bx bx-book-reader'></i> Educational System</h4>
+                    <p style="font-size:1rem;color:var(--text-muted);">True execution of 2076 mandates and practical evaluation goals.</p>
+                    <h4 style="color:var(--amber-gold); margin-top:20px;"><i class='bx bx-trending-up'></i> Economic Positioning</h4>
+                    <p style="font-size:1rem;color:var(--text-muted);">Nepal joins global standards, regional validation via CS capabilities.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 38 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-bulb'></i> Resolution</div>
+            <h1 class="slide-title anim-1">Direct Pain Point Resolution</h1>
+            <table class="data-table anim-2">
+                <thead><tr><th>MoEST Problem</th><th>NSA Solution</th></tr></thead>
+                <tbody style="font-size:0.85rem;">
+                    <tr><td>Only 3,203 S&T teachers</td><td class="highlight">3-day cert makes teachers Day-1 ready.</td></tr>
+                    <tr><td>Python taught from textbook</td><td class="highlight">Immediate real code execution inside platform.</td></tr>
+                    <tr><td>50% practical assessment gap</td><td class="highlight">Dashboards auto-feed reports to MoEST metrics.</td></tr>
+                    <tr><td>NPR 2.5m hardware idle</td><td class="highlight">NSA turns hardware into active learning centers.</td></tr>
+                    <tr><td>Rural connectivity issues</td><td class="highlight">Offline modes + field support solve isolation.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SLIDE 39 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-flag'></i> Conclusion</div>
+            <h1 class="slide-title anim-1">Nepal Joins a Proven Movement</h1>
+            <ul class="anim-2">
+                <li><i class='bx bx-check'></i> CodeMonkey deployed functionally in 100+ countries.</li>
+                <li><i class='bx bx-check'></i> Used by ministries across Africa, Middle East, SE Asia.</li>
+                <li><i class='bx bx-check'></i> Over 570 million coding challenges solved globally.</li>
+            </ul>
+            <div class="warning-box anim-3" style="background:rgba(253, 185, 28, 0.1); margin-top:30px;">
+                <i class='bx bx-bulb' style="color:var(--amber-gold);"></i><div><h4 style="color:var(--amber-gold);">Key Message</h4><p style="margin-bottom:0">This is not innovation for innovation's sake. Nepal does not need to pilot what's already proven worldwide. We just execute it here.</p></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 40 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-diamond'></i> Conclusion</div>
+            <h1 class="slide-title anim-1">The Complete Value Proposition</h1>
+            <div class="grid-2 anim-2">
+                <div class="column" style="background:var(--bg-alt); padding:20px; border-radius:6px;">
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Alignment:</strong> 100% Grade 9 Python.</p>
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Teachers:</strong> Zero coding experience required.</p>
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Experience:</strong> Game-based, pure execution logic.</p>
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Assessment:</strong> MoEST metrics automated.</p>
+                </div>
+                <div class="column" style="background:var(--bg-alt); padding:20px; border-radius:6px;">
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Speed:</strong> School deployment in 48h.</p>
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Scale:</strong> Up to 2.5m students by Y5.</p>
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Finance:</strong> Fits within current 2.5m grants.</p>
+                    <p><i class='bx bx-check-circle' style="color:var(--green-success);"></i> <strong>Credibility:</strong> 45m global users.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 41 -->
+        <div class="slide">
+            <div class="section-indicator"><i class='bx bx-check-shield'></i> Conclusion</div>
+            <h1 class="slide-title anim-1">Three Specific Requests</h1>
+            <div class="grid-3 anim-2" style="margin-top:20px;">
+                <div style="background:var(--bg-alt); padding:20px; border:1px solid var(--border-light); border-radius:8px;">
+                    <i class='bx bx-file-blank' style="font-size:2.5rem; color:var(--amber-gold); margin-bottom:10px;"></i>
+                    <h3 style="color:var(--primary-blue);">Ask 1</h3>
+                    <p><strong>MoU Partnership</strong></p>
+                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:10px; margin-bottom:0;">NSA designated as certified implementation partner for Gr 9-10 Python.</p>
+                </div>
+                <div style="background:var(--bg-alt); padding:20px; border:1px solid var(--border-light); border-radius:8px;">
+                    <i class='bx bx-buildings' style="font-size:2.5rem; color:var(--amber-gold); margin-bottom:10px;"></i>
+                    <h3 style="color:var(--primary-blue);">Ask 2</h3>
+                    <p><strong>Tech Hub Designation</strong></p>
+                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:10px; margin-bottom:0;">Designate 10 district grant schools as immediate Model A pilots for Year 1.</p>
+                </div>
+                <div style="background:var(--bg-alt); padding:20px; border:1px solid var(--border-light); border-radius:8px;">
+                    <i class='bx bx-book-bookmark' style="font-size:2.5rem; color:var(--amber-gold); margin-bottom:10px;"></i>
+                    <h3 style="color:var(--primary-blue);">Ask 3</h3>
+                    <p><strong>Endorsement</strong></p>
+                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:10px; margin-bottom:0;">Initiate CDC review to list CodeMonkey comprehensively as a resource.</p>
+                </div>
+            </div>
+            <div class="warning-box anim-3" style="background:rgba(66, 184, 128, 0.1); border-left-color:var(--green-success);">
+                <i class='bx bx-time' style="color:var(--green-success);"></i><div><h4 style="color:var(--green-success);">Timeline</h4><p style="margin-bottom:0; font-size:0.9rem;">All three can be initiated simultaneously. First schools operational within 30 days of MoU signing.</p></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 42 -->
+        <div class="slide cover-slide">
+            <i class='bx bx-rocket anim-1' style="font-size:4rem; color:var(--amber-gold); margin-bottom:20px;"></i>
+            <h1 class="slide-title anim-2" style="font-size: 2.8rem; text-align:center;">The Next Generation Deserves to Build the Digital Economy</h1>
+            <p class="anim-3" style="font-size:1.2rem; margin-top:20px; font-style:italic; color:var(--primary-blue);">"Coding education is no longer optional.<br>It is the new language of the future."</p>
+            <p class="anim-4" style="font-size:1rem; margin-top:30px; color:var(--text-muted);">
+                <strong>CodeMonkey</strong> is the vehicle.<br>
+                <strong>NSA</strong> is the driver.<br>
+                <strong>MoEST</strong> is the highway.
+            </p>
+            <div class="logo-lockup anim-5" style="margin-top:40px;">
+                <i class='bx bx-book-reader'></i> Nepal STEM Alliance × CodeMonkey <i class='bx bx-code-alt'></i>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="presentation.js"></script>
+</body>
+</html>
